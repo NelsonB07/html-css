@@ -11,6 +11,16 @@
     Grandes telas: acima de 1200px
 */
 
+/*
+    (Configuração para pequenas telas, que já foi feito na pasta syle.css e que pode ser ignorada agora.)
+
+    @media screen and (max-width: 600px) {
+    }
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+    }
+*/
+
+
 
 @media print { /* Impressão */
     * {
@@ -22,11 +32,14 @@
     }
     main {
         border: 2px solid black; 
+        width: 95vw;
+        text-align: center;
     }
     main::after {
         content: "Essa impressão foi feita pelo https://github.com/NelsonB07";
-        text-decoration: overline underline;
-        width: 90vw;
+        text-decoration: overline;
+        
+        
     }
     main  h1 {
         text-shadow: none;
@@ -42,6 +55,9 @@
     body {
         background: url(../imagens/back-tablet.jpg);
  }
+ main {
+    width: 500px;
+ }
         img#phone {display: none; }
         img#tablet {display: block; }
         img#print {display: none; }
@@ -52,6 +68,9 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) { /* Desktop */ 
     body {
         background: url(../imagens/back-pc.jpg);
+    }
+    main {
+        width: 600px;
     }
         img#phone {display: none; }
         img#tablet {display: none; }
@@ -64,7 +83,7 @@
         background: url(../imagens/back-tv.jpg);
     }
     main {
-        width: 700px;
+        width: 900px;
     }
         img#phone {display: none; }
         img#tablet {display: none; }

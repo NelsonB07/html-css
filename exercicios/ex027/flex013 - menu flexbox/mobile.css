@@ -9,3 +9,6 @@ header > h1 {
 header > nav > a {
     width: 90vw;
 }
+main {
+    width: 90vw;
+}
